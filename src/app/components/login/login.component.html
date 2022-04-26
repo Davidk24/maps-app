@@ -1,0 +1,37 @@
+<div class="loginContainer">
+  <mat-card>
+    <mat-card-title>Login</mat-card-title>
+    <mat-card-content>
+      <form (ngSubmit)="onLogin()">
+        <p>
+          <mat-form-field>
+            <input
+              type="username"
+              name="username"
+              id="username"
+              matInput
+              placeholder="Username"
+              [(ngModel)]="username"
+            />
+          </mat-form-field>
+        </p>
+
+        <p>
+          <mat-form-field>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              matInput
+              placeholder="Password"
+              [(ngModel)]="password"
+            />
+          </mat-form-field>
+        </p>
+        <div class="button">
+          <button type="submit" mat-button>Login</button>
+        </div>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>

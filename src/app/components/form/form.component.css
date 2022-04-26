@@ -1,0 +1,18 @@
+.full-width {
+  width: 100%;
+}
+
+.creation-footer {
+  position: relative;
+}
+
+.btn-submit {
+  color: darkgreen;
+  background-color: white;
+  float: right;
+}
+.btn-back {
+  color: red;
+  background-color: white;
+  float: right;
+}

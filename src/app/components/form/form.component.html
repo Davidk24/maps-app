@@ -1,0 +1,47 @@
+<div>
+  <form (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="outline">
+      <mat-label>Subject</mat-label>
+      <input
+        type="subject"
+        name="subject"
+        id="subject"
+        [(ngModel)]="subject"
+        matInput
+      />
+    </mat-form-field>
+    <mat-form-field class="full-width">
+      <mat-label>Your message</mat-label>
+      <textarea
+        type="message"
+        name="message"
+        id="message"
+        rows="20"
+        [(ngModel)]="message"
+        matInput
+      ></textarea>
+    </mat-form-field>
+    <div class="creation-footer">
+      <mat-form-field appearance="outline">
+        <mat-label for="name">Name</mat-label>
+        <input type="name" name="name" id="name" [(ngModel)]="name" matInput />
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          [(ngModel)]="email"
+          matInput
+        />
+      </mat-form-field>
+      <button mat-stroked-button class="btn-submit" type="submit" >
+        Submit
+      </button>
+      <button mat-stroked-button class="btn-back" color="warn" routerLink="">
+        Back
+      </button>
+    </div>
+  </form>
+</div>

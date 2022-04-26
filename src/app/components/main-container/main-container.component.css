@@ -1,0 +1,29 @@
+  .content {
+    height: calc(100vh - 98px);
+    border-radius: 10px;
+    margin: 15px;
+    margin-left: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: lightgray;
+  }
+  
+  mat-sidenav {
+      margin: 15px;
+      margin-left: 0px;
+      height: calc(100vh - 98px);
+      width: 200px;
+      position: absolute;
+      border-right: none;
+      background: #3F51B5;
+      color: white;
+      border-radius: 10px;
+      padding: 16px;
+      text-align: center;
+    }
+  
+mat-sidenav-container{
+  display: grid;
+}

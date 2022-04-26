@@ -1,0 +1,20 @@
+<mat-sidenav-container>
+  <mat-sidenav mode="side"class="mat-elevation-z2" opened>
+    <app-side-bar
+      [categories]="categories"
+      (onSelectCategory)="selectCategory($event)"
+    ></app-side-bar>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="content mat-elevation-z2">
+      <google-map [center]="center" [zoom]="zoom">
+        <map-marker
+          *ngFor="let marker of markers"
+          [position]="marker"
+          (mapClick)="openForm(marker)"
+        >
+        </map-marker
+      ></google-map>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
